@@ -9,7 +9,7 @@ RUN curl -L -o /tmp/xray.zip https://github.com/XTLS/Xray-core/releases/latest/d
 
 COPY config.json /usr/local/etc/xray/config.json
 
-# Zeabur එක සඳහා 8080 පෝට් එක විවෘත කිරීම
-EXPOSE 8080
+# SnapDeploy සඳහා 3000 පෝට් එක විවෘත කිරීම
+EXPOSE 3000
 
 CMD ["/usr/local/bin/xray", "run", "-config", "/usr/local/etc/xray/config.json"]
