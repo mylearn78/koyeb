@@ -9,7 +9,7 @@ RUN curl -L -o /tmp/xray.zip https://github.com/XTLS/Xray-core/releases/latest/d
 
 COPY config.json /usr/local/etc/xray/config.json
 
-# Koyeb එක සාමාන්‍යයෙන් පාවිච්චි කරන්නේ 8000 පෝට් එකයි
-EXPOSE 10000
+# Zeabur එක සඳහා 8080 පෝට් එක විවෘත කිරීම
+EXPOSE 8080
 
 CMD ["/usr/local/bin/xray", "run", "-config", "/usr/local/etc/xray/config.json"]
