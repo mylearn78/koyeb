@@ -10,6 +10,6 @@ RUN curl -L -o /tmp/xray.zip https://github.com/XTLS/Xray-core/releases/latest/d
 COPY config.json /usr/local/etc/xray/config.json
 
 # Koyeb එක සාමාන්‍යයෙන් පාවිච්චි කරන්නේ 8000 පෝට් එකයි
-EXPOSE 8000
+EXPOSE 10000
 
 CMD ["/usr/local/bin/xray", "run", "-config", "/usr/local/etc/xray/config.json"]
