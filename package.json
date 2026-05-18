@@ -1,0 +1,9 @@
+{
+  "name": "choreo-xray",
+  "version": "1.0.0",
+  "description": "Xray Core on Choreo Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
